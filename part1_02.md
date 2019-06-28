@@ -117,9 +117,6 @@
 `Object.prototype.toString.call(new Error()) ; // [object Error]`
 
 
-**好了，今天就说到这里，欢迎关注我的博客，一起交流学习前端知识。**
-
-**前端发展速度之快，只有不断的学习积累，才能紧跟时代的步伐。**
 
 
 
