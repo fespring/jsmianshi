@@ -3,16 +3,16 @@
 **Js中的数据类型一共有六种，即number、string、boolean、undefined、null、object。**
 
 
-###一、number
+### 一、number
 
 Number 数字类型，可以为整数，也可以是浮点数。
 
-###二、string
+### 二、string
 
 字符串由零个或多个字符构成，需要注意的是
 字符串必须放在引号里（单引号或双引号）。
 
-###三、boolean
+### 三、boolean
 
 布尔类型        (true  false) 用来表示判断的结果
 
@@ -20,21 +20,21 @@ Number 数字类型，可以为整数，也可以是浮点数。
 
 	非 “” 空字符串表示 true , “” 空字符串表示 false 。
 
-###四、undefined
+### 四、undefined
 
 指的是没有赋值的变量 （未定义）
 
-###五、null
+### 五、null
 
 值为空(空对象)
 
-###六、object
+### 六、object
 
 对象类型
 
 * 常见的对象有array、window、document等。
 
-###七、数据类型的转换
+### 七、数据类型的转换
 
 **在 js 中我们经常需要知道某些变量的数据类型，并将其转换为我们所需要的数据类型。**
 
@@ -62,7 +62,7 @@ Number 数字类型，可以为整数，也可以是浮点数。
 
 * undefined、null、NaN 转为布尔值都是 false 。
 
-###划重点：
+### 划重点：
 
 * null == undefined  // true
 
@@ -87,21 +87,6 @@ Number 数字类型，可以为整数，也可以是浮点数。
 * false == false   //true
 
 * !''   //true
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 **例：**
