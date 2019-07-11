@@ -18,7 +18,7 @@ Number 数字类型，可以为整数，也可以是浮点数。
 
 * 非零的数都表示 true , 0 表示 false。
 
-	非 “” 空字符串表示 true , “” 空字符串表示 false 。
+* 非 “” 空字符串表示 true , “” 空字符串表示 false 。
 
 ### 四、undefined
 
