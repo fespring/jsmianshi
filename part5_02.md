@@ -1,4 +1,4 @@
-## 字符串出现最多的字符
+## part5_02 字符串出现最多的字符
 
 下面来做一个 统计字符串中出现最多的字符
 
@@ -56,7 +56,6 @@ var star = 'aaaaaaaasddddddddfssssaaaaassdsdsfsdgdsasdssssssddddaaaa';
 var res = getManyChar(star);
 
 console.log(res);
-
 
 
 ```
