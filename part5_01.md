@@ -36,7 +36,7 @@ arr [10] 下标为 10 的元素是 c
 那么问题 2 就能解决了，arr[5] 是空的 访问一个不存在的元素，那输出结果肯定是 **undefined**
 
 
-###2.
+### 2.
 
 ```javascript
 console.log(a);
@@ -99,7 +99,7 @@ console.log(a);
 
 
 
-###3.
+### 3.
 
 ```javascript
 
@@ -159,10 +159,8 @@ test();
 所以输出的结果依次是：
 
 
-**function(){}**
+`function(){}`
 
-**undefined**
+`undefined`
 
-**Hello**
-
-
+`Hello`

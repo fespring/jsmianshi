@@ -1,80 +1,89 @@
-# 前端面试经常需要做一些 JavaScript 笔试题，其中包括很多关于执行结果、补充代码、编程类别的题目。
+## 前端面试经常需要做一些 `JavaScript` 笔试题，其中包括很多关于执行结果、补充代码、编程类别的题目。
 
 本课程就是为了帮应聘者解决这些常见问题的：
 
-经常遇到的 JavaScript 题目；
+经常遇到的 `JavaScript` 题目；
 解决执行结果、补充代码、编程题目的困惑和恐惧。
-* 1. [part1_01 表达式计算](#part1_01)
-	* 1.1. [1.原始表达式](#)
-	* 1.2. [2.（数组、对象的）初始化表达式](#-1)
-	* 1.3. [3.函数表达式](#-1)
-	* 1.4. [4.属性访问表达式](#-1)
-	* 1.5. [5.调用表达式](#-1)
-	* 1.6. [6.对象创建表达式](#-1)
-* 2. [part1_02 检测数据类型的方法](#part1_02)
-	* 2.1. [数据类型分为以下两种 ：](#-1)
-	* 2.2. [怎么检测数据类型呢 ？](#-1)
-* 3. [part1_03 运算符优先级](#part1_03)
-	* 3.1. [1. ++ -- 运算符](#-1)
-	* 3.2. [2. + - 运算符](#-1)
-	* 3.3. [3. + 加法运算符](#-1)
-	* 3.4. [4. - 减法运算符](#-1)
-	* 3.5. [5. * 乘法运算符](#-1)
-	* 3.6. [6. / 除法运算符](#-1)
-	* 3.7. [7. % 求模运算符](#-1)
-	* 3.8. [8. == != 运算符](#-1)
-	* 3.9. [9. < 小于、> 大于、<= 小于等于、 >= 大于等于](#-1)
-	* 3.10. [10. 逻辑运算符](#-1)
-	* 3.11. [11.&& 逻辑与](#-1)
-	* 3.12. [12. || 逻辑或](#-1)
-	* 3.13. [13. !  逻辑非](#-1)
-	* 3.14. [14. 赋值运算符](#-1)
-	* 3.15. [15. 条件运算符](#-1)
-	* 3.16. [16.逗号运算符](#-1)
-* 4. [ part2_01 基本数据类型和引用数据类型的区别](#part2_01)
-	* 4.1. [1、栈(stack)和堆（heap）](#stackheap)
-	* 4.2. [2、基本数据类型](#-1)
-	* 4.3. [3、引用数据类型](#-1)
-* 5. [part2_02 运算符，+NaN](#part2_02NaN)
-	* 5.1. [一、 `+` 号](#-1)
-	* 5.2. [二、 `-` 号](#-)
-	* 5.3. [三、 `*` 号](#-1)
-	* 5.4. [四、 `/` 号](#-1)
-	* 5.5. [五、 逗号运算符 , 结果取逗号后面的](#-1)
-	* 5.6. [六、 除了 `+` 运算符，其余的运算符`（- * / %）`运算时，如果符号两端是字符串，会先将字符串转为 `Number` 类型，再做数学运算](#-Number)
-	* 5.7. [七、 `NaN` 跟任意数据类型运算 结果都是 `NaN`](#NaNNaN)
-* 6. [part2_03 数据类型转换](#part2_03)
-	* 6.1. [一、number](#number)
-	* 6.2. [二、string](#string)
-	* 6.3. [三、boolean](#boolean)
-	* 6.4. [四、undefined](#undefined)
-	* 6.5. [五、null](#null)
-	* 6.6. [六、object](#object)
-	* 6.7. [七、数据类型的转换](#-1)
-	* 6.8. [划重点：](#-1)
-* 7. [part3_01 变量声明前置](#part3_01)
-	* 7.1. [下面的例子如果可以独立完成思考，你就理解了变量前置：](#-1)
-	* 7.2. [为什么要了解并理解变量前置](#-1)
-	* 7.3. [题目:](#:)
-		* 7.3.1. [分析步骤：](#-1)
-* 8. [part3_02 函数声明前置](#part3_02)
-* 9. [part4_01 函数的声明方式](#part4_01)
-	* 9.1. [定义函数的方式：](#-1)
-	* 9.2. [函数声明如下代码所示：](#-1)
-	* 9.3. [函数表达式：](#-1)
-* 10. [part4_02 自执行函数](#part4_02)
-	* 10.1. [立即执行函数是什么](#-1)
-	* 10.2. [立即执行函数有什么作用](#-1)
-* 11. [part4_03 提取查询参数](#part4_03)
-* 12. [part5_01 补充代码 (补充面试题)](#part5_01)
-	* 12.1. [1.](#-1)
-* 13. [part5_02 字符串出现最多的字符](#part5_02)
+
+*  [part1_01 表达式计算](#part1_01)
+	*  [1.原始表达式](#)
+	*  [2.（数组、对象的）初始化表达式](#-1)
+	*  [3.函数表达式](#-1)
+	*  [4.属性访问表达式](#-1)
+	*  [5.调用表达式](#-1)
+	*  [6.对象创建表达式](#-1)
+ 
+*  [part1_02 检测数据类型的方法](#part1_02)
+	*  [数据类型分为以下两种 ：](#-1)
+	*  [怎么检测数据类型呢 ？](#-1)
+	
+*  [part1_03 运算符优先级](#part1_03)
+	*  [1. ++ -- 运算符](#-1)
+	*  [2. + - 运算符](#-1)
+	*  [3. + 加法运算符](#-1)
+	*  [4. - 减法运算符](#-1)
+	*  [5. *乘法运算符](#-1)
+	*  [6. /除法运算符](#-1)
+	*  [7. % 求模运算符](#-1)
+	*  [8. == != 运算符](#-1)
+	*  [9. < 小于、> 大于、<= 小于等于、 >= 大于等于](#-1)
+	*  [10. 逻辑运算符](#-1)
+	*  [11.&& 逻辑与](#-1)
+	*  [12. || 逻辑或](#-1)
+	*  [13. !  逻辑非](#-1)
+	*  [14. 赋值运算符](#-1)
+	*  [15. 条件运算符](#-1)
+	*  [16.逗号运算符](#-1)
+	  
+*  [ part2_01 基本数据类型和引用数据类型的区别](#part2_01)
+	*  [1、栈(stack)和堆（heap）](#stackheap)
+	*  [2、基本数据类型](#-1)
+	*  [3、引用数据类型](#-1)
+	
+*  [part2_02 运算符，+NaN](#part2_02NaN)
+	*  [一、 `+` 号](#-1)
+	*  [二、 `-` 号](#-)
+	*  [三、 `*` 号](#-1)
+	*  [四、 `/` 号](#-1)
+	*  [五、 逗号运算符 , 结果取逗号后面的](#-1)
+	*  [六、 除了 `+` 运算符，其余的运算符`（- * / %）`运算时，如果符号两端是字符串，会先将字符串转为 `Number` 类型，再做数学运算](#-Number)
+	*  [七、 `NaN` 跟任意数据类型运算 结果都是 `NaN`](#NaNNaN)
+*  [part2_03 数据类型转换](#part2_03)
+	*  [一、number](#number)
+	*  [二、string](#string)
+	*  [三、boolean](#boolean)
+	*  [四、undefined](#undefined)
+	*  [五、null](#null)
+	*  [六、object](#object)
+	*  [七、数据类型的转换](#-1)
+	
+*  [part3_01 变量声明前置](#part3_01)
+	*  [下面的例子如果可以独立完成思考，你就理解了变量前置：](#-1)
+	*  [为什么要了解并理解变量前置](#-1)
+	*  [题目:](#:)
+		
+*  [part3_02 函数声明前置](#part3_02)
+	
+*  [part4_01 函数的声明方式](#part4_01)
+	*  [定义函数的方式：](#-1)
+	*  [函数声明如下代码所示：](#-1)
+	*  [函数表达式：](#-1)
+	
+*  [part4_02 自执行函数](#part4_02)
+	*  [立即执行函数是什么](#-1)
+	*  [立即执行函数有什么作用](#-1)
+	
+*  [part4_03 提取查询参数](#part4_03)
+	
+*  [part5_01 补充代码 (补充面试题)](#part5_01)
+
+*  [part5_02 字符串出现最多的字符](#part5_02)
 
 
 
 ##  1. <a name='part1_01'></a>part1_01 表达式计算
 
-    表达式是 javascript 中的一个短语，javascript 解释器会将其计算出一个结果。程序中常用量是最简单的一类表达式就是变量。
+    表达式是 Javascript 中的一个短语，Javascript 解释器会将其计算出一个结果。程序中常用量是最简单的一类表达式就是变量。
 
     变量名也是一种简单的表达式，它的值就是赋值给变量的值。
 
@@ -94,7 +103,7 @@
     字符串直接量--由单引号或者双引号括起来的字符序列。   'abc'
     正则表达式直接量--两条斜线之间的文本构成。          /pattern/
 
-JavaScript 的一些保留字/关键字:
+`JavaScript` 的一些保留字/关键字:
 
 ```javascript
     true
@@ -149,20 +158,20 @@ var obj = { x: 1 };
 ```
 
     - 我们可以通过  obj.x 或者 obj [" x "] 来访问它的属性，这一类表达式就称之为属性访问表达式。
-    - 若计算结果是null或undefined，表达式会抛出一个类型错误异常，因为这两个值都不能包含任意属性
-    - 若对象表达式后跟随一对方括号，则会计算方括号内的表达式的值并将其转换成字符串。不论什么情况，如果命名的属性不存在，则整个属性访问表达式的值为undefined
+    - 若计算结果是 null 或 undefined ，表达式会抛出一个类型错误异常，因为这两个值都不能包含任意属性
+    - 若对象表达式后跟随一对方括号，则会计算方括号内的表达式的值并将其转换成字符串。不论什么情况，如果命名的属性不存在，则整个属性访问表达式的值为 undefined
 
 ###  1.5. <a name='-1'></a>5.调用表达式
 
     - function（）；来调用一个函数，这样的表达式就称之为调用表达式。
     - 步骤：计算函数表达式--计算参数表达式--得到一组参数值---实参的值被依次赋值给形参，这些形参是定义函数时指定的--执行函数体（若函数使用return返回，返回值是整个调用表达式的值。否则表达式的值为undefined）
     - 如果表达式是一个属性访问表达式，则这个调用为“方法调用”
-    - 方法调用中执行函数体，作为属性访问主题的对象和数组是其调用方法内this的指向。但是不是所有方法的调用表达式都使用全局对象作为this的值
+    - 方法调用中执行函数体，作为属性访问主题的对象和数组是其调用方法内this的指向。但是不是所有方法的调用表达式都使用全局对象作为 this 的值
 
 ###  1.6. <a name='-1'></a>6.对象创建表达式
 
     - 定义：创建一个对象并调用一个函数（这个函数是构造函数）初始化对象的属性。
-    -对象创建表达式和函数调用类似，只在对象创建表达式前多一个new
+    -对象创建表达式和函数调用类似，只在对象创建表达式前多一个 new
 
 ```javascript
 new Object();
@@ -178,19 +187,17 @@ new Date();
 
     - 例如：
 
-    new Function（1,2）；我们可以传参，如果没有参数我们也可以new Object；创建一个空的对象这样也是合法的。
-	
-	
+   ` new Function（1,2）`；我们可以传参，如果没有参数我们也可以`new Object`；创建一个空的对象这样也是合法的。
+
 ##  2. <a name='part1_02'></a>part1_02 检测数据类型的方法
 
-
-**面试题中经常会考 js 数据类型检测，分享一下 js 中常用的几种方法来判断数据类型
+##### 面试题中经常会考 js 数据类型检测，分享一下 js 中常用的几种方法来判断数据类型
 
 ###  2.1. <a name='-1'></a>数据类型分为以下两种 ：
 
 1、基本数据类型
 
-`String、 Number、 Boolean、 Symbol、 Undefined、 Null `
+`String、 Number、 Boolean、 Symbol、 Undefined、 Null`
 
 2、引用数据类型
 
@@ -202,130 +209,192 @@ new Date();
 
 ###  2.2. <a name='-1'></a>怎么检测数据类型呢 ？
 
-** 一、typeof   检测数据类型的运算符**
+####  2.2.1. <a name='typeof'></a>一、typeof   检测数据类型的运算符
 
-`console.log(typeof '');      //string`
+```console.log(typeof '');      //string
 
-`console.log(typeof 1);      //number`
+console.log(typeof 1);      //number
 
-`console.log(typeof Symbol());     //symbol`
+console.log(typeof Symbol());     //symbol
 
-`console.log(typeof true);      //boolean`
+console.log(typeof true);      //boolean
  
-`console.log(typeof new Function());    //function`
+console.log(typeof new Function());    //function
 
-`console.log(typeof undefined);     //undefined`
+console.log(typeof undefined);     //undefined
 
-`console.log(typeof {});         //object`
+console.log(typeof {});         //object
 
-`console.log(typeof null);     //object    无效`
+console.log(typeof null);     //object    无效
 
-`console.log(typeof []);         //object   无效`
+console.log(typeof []);         //object   无效
 
-`console.log(typeof new Date());         //object   无效`
+console.log(typeof new Date());         //object   无效
 
-`console.log(typeof new RegExp());         //object   无效`
+console.log(typeof new RegExp());         //object   无效
+```
 
 
 通过以上输出结果，可以看到 ：
 
-对于基本类型，除 null 以外，均可以返回正确的结果。
+对于基本类型，除 `null` 以外，均可以返回正确的结果。
 
-对于引用类型，除 function 以外，一律返回 object 类型。
+对于引用类型，除 `function` 以外，一律返回 `object` 类型。
 
-对于 null ，返回 object 类型。
+对于 `null` ，返回 `object` 类型。
 
-对于 function 返回  function 类型。
+对于 `function` 返回  `function` 类型。
 
-** 局限性 ：**
+####  2.2.2. <a name='-1'></a>局限性：
 
-1、因为 null 值表示一个空对象指针，所以这也正是使用 typeof 操作符检测 null 值时会返回 "object" 的原因，其实 null 的数据类型是 Null ; 
+1、因为 `null` 值表示一个空对象指针，所以这也正是使用 `typeof` 操作符检测 `null` 值时会返回 `object` 的原因，其实 `null` 的数据类型是 `Null` ; 
 
-1、引用类型中的 数组、日期、正则 也都有属于自己的具体类型 ; 而 typeof 对于这些类型的处理，只返回了处于其原型链最顶端的 Object 类型。
-
-
-
-** 二、instanceof   检测某一个实例是否属于某个类 **
+1、引用类型中的 数组、日期、正则 也都有属于自己的具体类型 ; 而 `typeof` 对于这些类型的处理，只返回了处于其原型链最顶端的 `Object` 类型。
 
 
-主要用来弥补 typeof 不能检测具体属于哪个对象的局限性。
+
+####  2.2.3. <a name='instanceof'></a>二、instanceof   检测某一个实例是否属于某个类
 
 
-`console.log("1" instanceof String);   //false`
+主要用来弥补 `typeof` 不能检测具体属于哪个对象的局限性。
 
-`console.log(1 instanceof Number);   //false`
 
-`console.log(true instanceof Boolean);   //false`
+```console.log("1" instanceof String);   //false
 
-`console.log(null instanceof Object);   //false`
+console.log(1 instanceof Number);   //false
 
-`console.log(undefined instanceof Object);  //false`
+console.log(true instanceof Boolean);   //false
 
-`console.log([] instanceof Array);  //true`
+console.log(null instanceof Object);   //false
 
-`console.log(function(){} instanceof Function);  //true`
+console.log(undefined instanceof Object);  //false
 
-`console.log({} instanceof Object);  //true`
+console.log([] instanceof Array);  //true
 
-**局限性：**
+console.log(function(){} instanceof Function);  //true
+
+console.log({} instanceof Object);  //true
+```
+
+####  2.2.4. <a name='-1'></a>局限性：
 
 1、不能用于检测和处理字面量方式创建出来的基本数据类型值，即基本数据类型。
 
-2、instanceof的特性：只要在当前实例的原型链上的对象，我们用其检测出来都为true。
+2、`instanceof` 的特性：只要在当前实例的原型链上的对象，我们用其检测出来都为 `true`。
 
-** 三、Object.prototype.toString.call()　原型链上的Object对象的toString方法**
+####  2.2.5. <a name='Object.prototype.toString.callObjecttoString'></a>三、Object.prototype.toString.call()　原型链上的Object对象的toString方法
 
-返回值的类型为string类型，是最全面也是最常用的检测数据类型的方式。
+返回值的类型为 `string` 类型，是最全面也是最常用的检测数据类型的方式。
 
+```javascript
+Object.prototype.toString.call('') ;   // [object String]
 
-`Object.prototype.toString.call('') ;   // [object String]`
+Object.prototype.toString.call(1) ;    // [object Number]
 
-`Object.prototype.toString.call(1) ;    // [object Number]`
+Object.prototype.toString.call(true) ; // [object Boolean]
 
-`Object.prototype.toString.call(true) ; // [object Boolean]`
+Object.prototype.toString.call(Symbol()) ; //[object Symbol]
 
-`Object.prototype.toString.call(Symbol()) ; //[object Symbol]`
+Object.prototype.toString.call(undefined) ; // [object Undefined]
 
-`Object.prototype.toString.call(undefined) ; // [object Undefined]`
+Object.prototype.toString.call(null) ; // [object Null]
 
-`Object.prototype.toString.call(null) ; // [object Null]`
+Object.prototype.toString.call(new Function()) ; // [object Function]
 
-`Object.prototype.toString.call(new Function()) ; // [object Function]`
+Object.prototype.toString.call(new Date()) ; // [object Date]
 
-`Object.prototype.toString.call(new Date()) ; // [object Date]`
+Object.prototype.toString.call([]) ; // [object Array]
 
-`Object.prototype.toString.call([]) ; // [object Array]`
+Object.prototype.toString.call(new RegExp()) ; // [object RegExp]
 
-`Object.prototype.toString.call(new RegExp()) ; // [object RegExp]`
-
-`Object.prototype.toString.call(new Error()) ; // [object Error]`
+Object.prototype.toString.call(new Error()) ; // [object Error]
+```
 
 ##  3. <a name='part1_03'></a>part1_03 运算符优先级
 
 `JavaScript` 中的运算符优先级是一套规则。该规则在计算表达式时控制运算符执行的顺序。具有较高优先级的运算符先于较低优先级的运算符执行。
 
 
-JavaScript 中的运算符用于`算术表达式`、`比较表达式`、`逻辑表达式`、`赋值表达式`等。需要注意的是，大多数运算符都是由标点符号表示的，比如 `+` 和 `=` 。而另外一些运算符则是由关键字表示的，比如 `typeof` 和 `instanceof` ，关键字运算符和标点符号都是正规的运算符。
+`JavaScript` 中的运算符用于：**比较表达式**、**逻辑表达式**、**赋值表达式**等。需要注意的是，大多数运算符都是由标点符号表示的，比如 + 和 = 。而另外一些运算符则是由关键字表示的，比如 `typeof` 和 `instanceof`，关键字运算符和标点符号都是正规的运算符。
 
-下表列出了 `JavaScript` 中所有的运算符，并按照运算符的优先级排序的，前面的运算符优先级要高于后面的运算符优先级，被空行分隔开来的运算符具有不同的优先级。
-
-![](https://user-gold-cdn.xitu.io/2019/6/29/16b9edb9b91f1c6c?w=722&h=677&f=png&s=17024)
+下表列出了 `JavaScript` 中的运算符，并按照运算符的优先级排序。
 
 
-![](https://user-gold-cdn.xitu.io/2019/6/29/16b9edbf636e738d?w=715&h=880&f=png&s=23571)
+ | 优先级 | 运算类型             | 关联性   | 运算符         |
+ | ------ | -------------------- | -------- | -------------- |
+ | 20     | 圆括号               | n/n      | (...)          |
+ | 19     | 成员访问             | 从左到右 | … . …          |
+ |        | 需计算的成员访问     | 从左到右 | … [ … ]        |
+ |        | new (带参数列表)     | n/a	new  | … ( … )        |
+ |        | 函数调用             | 从左到右 | … ( … )        |
+ | 18     | new (无参数列表)     | 从右到左 | new …          |
+ | 17     | 后置递增(运算符在后) | n/a      | … ++           |
+ |        | 后置递减(运算符在后) |          | … --           |
+ | 16     | 逻辑非               | 从右到左 | ! …            |
+ |        | 按位非               |          | ~ …            |
+ |        | 一元加法             |          | + …            |
+ |        | 一元减法             |          | - …            |
+ |        | 前置递增             |          | ++ …           |
+ |        | 前置递减             |          | -- …           |
+ |        | typeof               |          | typeof …       |
+ |        | void                 |          | void …         |
+ |        | delete               |          | delete …       |
+ |        | await                |          | await …        |
+ | 15     | 幂                   | 从右到左 | … ** …         |
+ | 14     | 乘法                 | 从左到右 | … * …          |
+ |        | 除法                 |          | … / …          |
+ |        | 取模                 |          | … % …          |
+ | 13     | 加法                 | 从左到右 | … + …          |
+ |        | 减法                 |          | … - …          |
+ | 12     | 按位左移             | 从左到右 | … << …         |
+ |        | 按位右移             |          | … >> …         |
+ |        | 无符号右移           |          | … >>> …        |
+ | 11     | 小于                 | 从左到右 | … < …          |
+ |        | 小于等于             |          | … <= …         |
+ |        | 大于                 |          | … > …          |
+ |        | 大于等于             |          | … >= …         |
+ |        | in                   |          | … in …         |
+ |        | instanceof           |          | … instanceof … |
+ | 10     | 等号                 | 从左到右 | … == …         |
+ |        | 非等号               |          | … != …         |
+ |        | 全等号               |          | … === …        |
+ |        | 非全等号             |          | … !== …        |
+ | 9      | 按位与               | 从左到右 | … & …          |
+ | 8      | 按位异或             | 从左到右 | … ^ …          |
+ | 7      | 按位或               | 从左到右 | … l …          |
+ | 6      | 逻辑与               | 从左到右 | … && …         |
+ | 5      | 逻辑或               | 从左到右 | … ll …         |
+ | 4      | 条件运算符           | 从右到左 | … ? … : …      |
+ | 3      | 赋值                 | 从右到左 | … = …          |
+ |        |                      |          | … += …         |
+ |        |                      |          | … -= …         |
+ |        |                      |          | … *= …         |
+ |        |                      |          | … /= …         |
+ |        |                      |          | … %= …         |
+ |        |                      |          | … <<= …        |
+ |        |                      |          | … >>= …        |
+ |        |                      |          | … >>>= …       |
+ |        |                      |          | … &= …         |
+ |        |                      |          | … ^= …         |
+ |        |                      |          | …              | = … |
+ | 2      | yield                | 从右到左 | yield …        |
+ |        | yield*               |          | yield* …       |
+ | 1      | 展开运算符           | n/a      | ... …          |
+ | 0      | 逗号                 | 从左到右 | … , …          |
 
-
-![](https://user-gold-cdn.xitu.io/2019/6/29/16b9edc2eaa2a593?w=748&h=938&f=png&s=22399)
 
 ###  3.1. <a name='-1'></a>1. ++ -- 运算符
 
 ++ -- 递增递减运算符借鉴自 C 语言，它们分前置型和后置型，作用是改变一个变量的值。
 
 例如：
-
-
-![](https://user-gold-cdn.xitu.io/2019/6/30/16ba40c920d71596?w=729&h=168&f=png&s=5213)
-
+```javascript
+var a=5;
+console.log(a++); //5
+console.log(++a); //7
+console.log(a--); //7
+console.log(--a); //5
+```
 ###  3.2. <a name='-1'></a>2. + - 运算符
 
 当 + - 作为一元运算符时，应用于数值，表示数值的正负。应用于非数值，先按 `Number()` 转型函数对这个值执行转换，再表示该值的正负。
@@ -337,33 +406,33 @@ JavaScript 中的运算符用于`算术表达式`、`比较表达式`、`逻辑�
 如果参与乘法
 计算的某个操作数不是数值，后台会先使用 `Number()`；
 
-转型函数将其转换为数值。也就是说，空字符串将被当作 `0`，布尔值 `true` 将被当作 1 。
+转型函数将其转换为数值。也就是说，空字符串将被当作 0，布尔值 true 将被当作 1 。
 
 ###  3.3. <a name='-1'></a>3. + 加法运算符
 
 如果两个运算符都是数值，执行常规的加法计算，然后根据下列规则返回结果：
 
-如果有一个操作数是 `NaN`，则结果是 `NaN`；
+一个操作数是 NaN，则结果是 NaN；
 
-如果是 `Infinity` 加 `Infinity`，则结果是 `Infinity`；
+ `Infinity` 加 `Infinity`，则结果是 `Infinity`；
 
-如果是 `-nfinity` 加 `Infinity`，则结果是 `Infinity`；
+ `-Infinity` 加 `-Infinity`，则结果是 `-Infinity`；
 
-如果是 `Infinity` 加 `Infinity`，则结果是 `NaN`；
+ `Infinity` 加 `Infinity`，则结果是 NaN；
 
-如果是 `+0` 加 `+0`，则结果是 `+0`；
+ `+0` 加 `+0`，则结果是 `+0`；
 
-如果是 `-0` 加 `-0`，则结果是 `-0`；
+ `-0` 加 `-0`，则结果是 `-0`；
 
-如果是 `+0` 加 `-0`，则结果是 `+0`;
+ `+0` 加 `-0`，则结果是 `+0`;
 
 如果有一个操作数不是数值，那么就要应用如下规则：
 
-如果两个操作数都是字符串，则将第二个操作数与第一个操作数拼接起来；
+两个操作数都是字符串，则将第二个操作数与第一个操作数拼接起来；
 
-如果只有一个操作数是字符串，则将另一个操作数转换为字符串，然后再将两个字符串拼接起来。
+只有一个操作数是字符串，则将另一个操作数转换为字符串，然后再将两个字符串拼接起来。
 
-如果有一个操作数是对象、数值或布尔值，则调用它们的 `toString()` 方法取得相应的字符串值，然后再应用前面关于字符串的规则。对于 `undefined` 和 `null`，则分别调用 `String()` 函数并取得字符串 `undefined` 和 `null`。
+有一个操作数是对象、数值或布尔值，则调用它们的 `toString()` 方法取得相应的字符串值，然后再应用前面关于字符串的规则。对于 `undefined` 和 `null`，则分别调用 `String()` 函数并取得字符串 `undefined` 和 `null`。
 
 如果是 `null` 加 `null`，则结果是 `0`;
 
@@ -373,61 +442,61 @@ JavaScript 中的运算符用于`算术表达式`、`比较表达式`、`逻辑�
 
 如果两个运算符都是数值，执行常规的减法计算，然后根据下列规则返回结果：
 
-如果有一个操作数是 `NaN`，则结果是 `NaN`；
+一个操作数是 `NaN`，则结果是 `NaN`；
 
-如果是 `Infinity` 减 `Infinity`，则结果是 `NaN`；
+ `Infinity` 减 `Infinity`，则结果是 `NaN`；
 
-如果是 `Infinity` 减 `Infinity`，则结果是 `NaN`；
+ `-Infinity` 减 `-Infinity`，`则结果是 `NaN`；
 
-如果是 `Infinity` 减 `Infinity`，则结果是 `Infinity`；
+ `Infinity` 减 `-Infinity`，则结果是 `Infinity`；
 
-如果是 `Infinity` 减 `Infinity`，则结果是 `Infinity`；
+ `-Infinity` 减 `Infinity`，则结果是 `-Infinity`；
 
-如果是 `+0` 减 `+0`，则结果是 `+0`；
+ `+0` 减 `+0`，则结果是 `+0`；
 
-如果是 `+0` 减 `-0`，则结果是 `-0`；
+ `+0` 减 `-0`，则结果是 `-0`；
 
-如果是 `-0` 减 `-0`，则结果是 `+0`；
+ `-0` 减 `-0`，则结果是 `+0`；
 
-如果有一个操作数不是数值，那么就要应用如下规则：
+一个操作数不是数值，那么就要应用如下规则：
 
-如果有一个操作数是字符串、布尔值、`null` 或 `undefined`，则先在后台调用 `Number()` 函数将其转换为数值，然后再根据前面的规则执行减法计算。
+一个操作数是字符串、布尔值、`null` 或 `undefined`，则先在后台调用 `Number()` 函数将其转换为数值，然后再根据前面的规则执行减法计算。
 
 如果转换的结果是 `NaN`，则减法的结果就是 `NaN`；
 
-如果有一个操作数是对象，则调用对象的 `valueOf()` 方法以取得表示该对象的数值。
+一个操作数是对象，则调用对象的 `valueOf()` 方法以取得表示该对象的数值。
 
 如果得到的值是 `NaN`，则减法的结果就是 `NaN`。
 
-如果对象没有 `valueOf()` 方法，则调用其 `toString()` 方法并将得到的字符串转换为数值。
+对象没有 `valueOf()` 方法，则调用其 `toString()` 方法并将得到的字符串转换为数值。
 
 如果是 `null` 减 `null`，则结果是 `0`;
 
-如果是 `undefined` 减 `undefined`，则结果是 `NaN` ;
+`undefined` 减 `undefined`，则结果是 `NaN`;
 
 
 
 
 
-###  3.5. <a name='-1'></a>5. * 乘法运算符
+###  3.5. <a name='-1'></a>5. *乘法运算符
 
 用于计算两个数值的乘积，在处理特殊值的情况下，乘法运算符遵循下列特殊的规则：
 
 如果操作数都是数值，执行常规的乘法计算，即两个正数或两个负数相乘的结果还是正数，而如果只有一个操作数有符号，那么结果就是负数。
 
-如果乘积超过了 `JavaScript` 数值的表示范围，则返回 `Infinity` 或 `-Infinity`；
+如果乘积超过了 JavaScript 数值的表示范围，则返回 Infinity 或 -Infinity；
 
-如果有一个操作数是 `NaN`，则结果是 `NaN` ；
+如果有一个操作数是 NaN，则结果是 NaN；
 
-如果是 `Infinity` 与 `0` 相乘，则结果是 `NaN` ；
+`Infinity` 与 `0` 相乘，则结果是 `NaN`；
 
-如果是 `Infinity` 与非 `0` 数值相乘，则结果是 `Infinity` 或 `-Infinity`，取决于有符号操作数的符号；
+`Infinity` 与非 `0` 数值相乘，则结果是 `Infinity` 或 `-Infinity`，取决于有符号操作数的符号；
 
-如果是 `Infinity` 与 `Infinity` 相乘，则结果是 `Infinity`；
+`Infinity` 与 `Infinity` 相乘，则结果是 `Infinity`；
 
-如果有一个操作数不是数值，则在后台调用 `Number()`将其转换为数值，然后再应用上面的规则。
+一个操作数不是数值，则在后台调用 `Number()` 将其转换为数值，然后再应用上面的规则。
 
-###  3.6. <a name='-1'></a>6. / 除法运算符
+###  3.6. <a name='-1'></a>6. /除法运算符
 
 用于计算两个数值的商，与乘法运算符类似，除法运算符对特殊的值也有特殊的处理规则。
 
@@ -437,35 +506,35 @@ JavaScript 中的运算符用于`算术表达式`、`比较表达式`、`逻辑�
 
 如果商超过了 `JavaScript` 数值的表示范围，则返回 `Infinity` 或 `-Infinity`；
 
-如果有一个操作数是 `NaN`，则结果是 `NaN`；
+一个操作数是 `NaN`，则结果是 `NaN`；
 
-如果是 `Infinity` 被 `Infinity` 除，则结果是 `NaN`；
+`Infinity` 被 `Infinity` 除，则结果是 `NaN`；
 
-如果是零被零除，则结果是 `NaN`；
+零被零除，则结果是 `NaN`；
 
-如果是非零的有限数被零除，则结果是 `Infinity` 或 `-Infinity`，取决于有符号操作数的符号；
+非零的有限数被零除，则结果是 `Infinity` 或 -`Infinity`，取决于有符号操作数的符号；
 
-如果是 `Infinity` 被任何非零数值除，则结果是 `Infinity` 或 `-Infinity`，取决于有符号操作数的符号；
+`Infinity` 被任何非零数值除，则结果是 `Infinity` 或-`Infinity`，取决于有符号操作数的符号；
 
-如果有一个操作数不是数值，则在后台调用 `Number()` 将其转换为数值，然后再应用上面的规则。
+一个操作数不是数值，则在后台调用 `Number()` 将其转换为数值，然后再应用上面的规则。
 
 ###  3.7. <a name='-1'></a>7. % 求模运算符
 
 用于计算两个数值的余数，与另外两个乘性运算符类似，求模运算符会遵循下列特殊规则来处理特殊的值：
 
-如果操作数都是数值，执行常规的除法计算，返回除得的余数；
+操作数都是数值，执行常规的除法计算，返回除得的余数；
 
-如果被除数是无穷大值而除数是有限大的数值，则结果是 `NaN`；
+被除数是无穷大值而除数是有限大的数值，则结果是 `NaN`；
 
-如果被除数是有限大的数值而除数是零，则结果是 `NaN`；
+被除数是有限大的数值而除数是零，则结果是 `NaN`；
 
-如果是 `Infinity` 被 `Infinity` 除，则结果是 `NaN`；
+ `Infinity` 被 `Infinity` 除，则结果是 `NaN`；
 
 如果被除数是有限大的数值而除数是无穷大的数值，则结果是被除数；
 
 如果被除数是零，则结果是零；
 
-如果有一个操作数不是数值，则在后台调用 `Number()` 将其转换为数值，然后再应用上面的规则。
+一个操作数不是数值，则在后台调用 `Number()` 将其转换为数值，然后再应用上面的规则。
 
 
 ###  3.8. <a name='-1'></a>8. == != 运算符
@@ -474,31 +543,31 @@ JavaScript 中的运算符用于`算术表达式`、`比较表达式`、`逻辑�
 
 在转换不同的数据类型时，相等和不相等运算符遵循下列基本规则：
 
-如果有一个操作数是布尔值，则在比较相等性之前先将其转换为数值（`false` 转换为 0，而 true 转换为 1）；
+操作数是布尔值，则在比较相等性之前先将其转换为数值（`false` 转换为 `0`，而 `true` 转换为 `1`）；
 
-如果一个操作数是字符串，另一个操作数是数值，在比较相等性之前先将字符串转换为数值；
+一个操作数是字符串，另一个操作数是数值，在比较相等性之前先将字符串转换为数值；
 
-如果一个操作数是对象，另一个操作数不是，则调用对象的 `valueOf()` 方法，用得到的基本类型值按照前面的规则进行比较；
+一个操作数是对象，另一个操作数不是，则调用对象的 `valueOf()`        方法，用得到的基本类型值按照前面的规则进行比较；
 `null` 和 `undefined` 是相等的。要比较相等性之前，不能将 `null` 和 `undefined` 转换成其他任何值。
 
-如果有一个操作数是 `NaN`，则相等运算符返回 `false`，而不相等运算符返回 `true`。重要提示：即使两个操作数都是 `NaN`，相等运算符也返回 `false`；因为按照规则，`NaN` 不等于 `NaN`。
+如果有一个操作数是 `NaN`，则相等运算符返回 `false`，而不相等运算符返回 `true`。重要提示：即使两个操作数都是 `NaN`，相等运算符也返回 `false`；因为按照规则，NaN 不等于 NaN。
 
-如果两个操作数都是对象，则比较它们是不是同一个对象。如果两个操作数都指向同一个对象，则相等运算符返回 `true`；否则，返回 `false`。
+两个操作数都是对象，则比较它们是不是同一个对象。如果两个操作数都指向同一个对象，则相等运算符返回 `true`；否则，返回 `false`。
 
 
 ###  3.9. <a name='-1'></a>9. < 小于、> 大于、<= 小于等于、 >= 大于等于
 
-这几个关系运算符用于对两个值进行比较返回一个布尔值。与 `JavaScript` 中的其他运算符一样，当关系运算符的操作数使用了非数值时，也要进行数据转换或完成某些奇怪的操作。以下就是相应的规则。
+这几个关系运算符用于对两个值进行比较返回一个布尔值。与 JavaScript 中的其他运算符一样，当关系运算符的操作数使用了非数值时，也要进行数据转换或完成某些奇怪的操作。以下就是相应的规则。
 
-如果两个操作数都是数值，则执行数值比较。
+两个操作数都是数值，则执行数值比较。
 
-如果两个操作数都是字符串，则比较两个字符串对应的字符编码值（可以通过字符串的 `charCodeAt()` 函数获取字符编码值）。
+两个操作数都是字符串，则比较两个字符串对应的字符编码值（可以通过字符串的 `charCodeAt()` 函数获取字符编码值）。
 
 如果一个操作数是数值，则将另一个操作数转换为一个数值，然后执行数值比较。
 
-如果一个操作数是对象，则调用这个对象的 `valueOf()` 方法，用得到的结果按照前面的规则执行比较。如果对象没有 `valueOf()` 方法，则调用 `toString()` 方法，并用得到的结果根据前面的规则执行比较。
+一个操作数是对象，则调用这个对象的 `valueOf()` 方法，用得到的结果按照前面的规则执行比较。如果对象没有 `valueOf()`方法，则调用 `toString()`方法，并用得到的结果根据前面的规则执行比较。
 
-如果一个操作数是布尔值，则先将其转换为数值，然后再执行比较。
+一个操作数是布尔值，则先将其转换为数值，然后再执行比较。
 
 ###  3.10. <a name='-1'></a>10. 逻辑运算符
 
@@ -512,13 +581,13 @@ JavaScript 中的运算符用于`算术表达式`、`比较表达式`、`逻辑�
 
 如果第二个操作数是对象，则只有在第一个操作数的求值结果为 true 的情况下才会返回该对象；
 
-如果两个操作数都是对象，则返回第二个操作数；
+两个操作数都是对象，则返回第二个操作数；
 
-如果有一个操作数是 `null`，则返回 `null`；
+操作数是 `null`，则返回 `null`；
 
-如果有一个操作数是 `NaN`，则返回 `NaN`；
+操作数是 `NaN`，则返回 `NaN`；
 
-如果有一个操作数是 `undefined`，则返回 `undefined`。
+操作数是 `undefined`，则返回 `undefined`。
 
 逻辑与操作属于短路操作，即如果第一个操作数能够决定结果，那么就不会再对第二个操作数求值。对于逻辑与操作而言，如果第一个操作数是 `false`，无论第二个操作数是什么值，结果都不再可能是 `true` 了。
 
@@ -531,11 +600,11 @@ JavaScript 中的运算符用于`算术表达式`、`比较表达式`、`逻辑�
 
 如果两个操作数都是对象，则返回第一个操作数；
 
-如果两个操作数都是 `null`，则返回 `null`；
+两个操作数都是 `null`，则返回 `null`；
 
-如果两个操作数都是 `NaN`，则返回 `NaN`；
+两个操作数都是 `NaN`，则返回 `NaN`；
 
-如果两个操作数都是 `undefined`，则返回 `undefined` 。
+两个操作数都是 `undefined`，则返回 `undefined`。
 
 与逻辑与运算符相似，逻辑或运算符也是短路运算符。也就是说，如果第一个操作数的求值结果为 `true`，就不会对第二个操作数求值了。
 
@@ -543,30 +612,42 @@ JavaScript 中的运算符用于`算术表达式`、`比较表达式`、`逻辑�
 
 逻辑非操作可以应用于任何类型的操作数，无论这个值是什么数据类型，这个运算符都会返回一个布尔值。逻辑非运算符首先会将它的操作数转换为一个布尔值，然后再对其求反。逻辑非运算符遵循下列规则：
 
-如果操作数是一个对象，返回 `false`；
+操作数是一个对象，返回 `false`；
 
-如果操作数是一个空字符串，返回 `true`；
+操作数是一个空字符串，返回 `true`；
 
-如果操作数是一个非空字符串，返回 `false`；
+操作数是一个非空字符串，返回 `false`；
 
-如果操作数是数值 `0` ，返回 `true`；
+操作数是数值 `0`，返回 `true`；
 
-如果操作数是任意非 `0` 数值（包括 `Infinity`），返回 `false`；
+操作数是任意非 `0` 数值（包括 `Infinity`），返回 `false`；
 
-如果操作数是 `null`，返回 `true`；
+操作数是 `null`，返回 `true`；
 
-如果操作数是 `NaN`，返回 `true`；
+操作数是 `NaN`，返回 `true`；
 
-如果操作数是 `undefined`，返回 `true`。
+操作数是 `undefined`，返回 `true`。
 
 下面几个例子展示了应用上述规则的结果：
 
+```javascript
+console.log(!false);    //true
+console.log(!"blue");   //false
+console.log(!0);        //true
+console.log(!NaN);      //true
+console.log(!"");       //true
+console.log(!12345);    //false
+```
 
-![](https://user-gold-cdn.xitu.io/2019/6/30/16ba418926e5b7b3?w=728&h=193&f=png&s=8052)
  逻辑非运算符也可以用于将一个值转换为与其对应的布尔值。而同时使用两个逻辑非运算符，实际上就会模拟 Boolean() 转型函数的行为。其中，第一个逻辑非操作会基于无论什么操作数返回一个布尔值，而第二个逻辑非操作则对该布尔值求反，于是就得到了这个值真正对应的布尔值。当然，最终结果与对这个值使用 Boolean() 函数相同，例如：
 
-
-![](https://user-gold-cdn.xitu.io/2019/6/30/16ba41a1e54762ae?w=686&h=171&f=png&s=6893)
+```javascript
+console.log(!!"blue");   //true
+console.log(!!0);        //false
+console.log(!!NaN);      //false
+console.log(!!"");       //false
+console.log(!!12345);    //true
+```
 
 
 ###  3.14. <a name='-1'></a>14. 赋值运算符
@@ -574,45 +655,51 @@ JavaScript 中的运算符用于`算术表达式`、`比较表达式`、`逻辑�
 简单的赋值运算符由等于号 = 表示，其作用就是把右侧的值赋给左侧的变量，如下面的例子所示：
 
 
-![](https://user-gold-cdn.xitu.io/2019/6/30/16ba4215ace65823?w=668&h=65&f=png&s=1202)
-
+```javascript
+ var num= 10;
+```
 如果在等于号 = 前面再添加乘性运算符、加性运算符或位运算符，就可以完成复合赋值操作。这种复合赋值操作相当于是对下面常规表达式的简写形式：
 
-
-![](https://user-gold-cdn.xitu.io/2019/6/30/16ba42f393d9855c?w=683&h=90&f=png&s=2522)
+```javascript
+ var num= 10;
+ num += 10;      //等同于 num= num+ 10;
+```
 
  每个主要算术运算符（以及个别的其他运算符）都有对应的复合赋值运算符。这些运算符如下所示：
 
-乘/赋值 `*=` ；
+乘/赋值 *=；
 
-除/赋值 `/=` ；
+除/赋值 /=；
 
-模/赋值 `%=` ；
+模/赋值 %=；
 
-加/赋值 `+=` ；
+加/赋值 +=；
 
-减/赋值 `-=` ；
+减/赋值 -=；
 
-左移/赋值 `<<=` ；
+左移/赋值 <<=；
 
-有符号右移/赋值 `>>=` ；
+有符号右移/赋值 >>=；
 
-无符号右移/赋值 `>>>=` 。
+无符号右移/赋值 >>>=。
 
 设计这些运算符的主要目的就是简化赋值操作，使用它们不会带来任何性能的提升。
 
 ###  3.15. <a name='-1'></a>15. 条件运算符
-? : 条件运算符应该算是 `JavaScript` 中最灵活的一种运算符了，而且它遵循与 Java 中的条件运算符相同的语法形式，如下面的例子所示：
+? : 条件运算符应该算是 `JavaScript` 中最灵活的一种运算符了，而且它遵循与 `Java` 中的条件运算符相同的语法形式，如下面的例子所示：
 
-
-![](https://user-gold-cdn.xitu.io/2019/6/30/16ba43042acf7957?w=689&h=69&f=png&s=2273)
+```javascript
+ variable = boolean_expression ? true_value : false_value;
+```
 
 ###  3.16. <a name='-1'></a>16.逗号运算符
 
 逗号运算符多用于声明多个变量；但除此之外，逗号运算符还可以用于赋值。在用于赋值时，逗号运算符总会返回表达式中的最后一项，如下面的例子所示：
 
 
-![](https://user-gold-cdn.xitu.io/2019/6/30/16ba4318e8f9e0af?w=686&h=68&f=png&s=2267)
+```javascript
+ var num = (5,1,4,8,0); //num 的值为0
+```
 
 由于 `0` 是表达式中的最后一项，因此 `num` 的值就是 `0`。虽然逗号的这种使用方式并不常见，但这个例子可以帮我们理解逗号的这种行为。
 
@@ -626,11 +713,6 @@ JavaScript 中的运算符用于`算术表达式`、`比较表达式`、`逻辑�
 3.逻辑运算符
 
 4.赋值运算符  
-
-
-以上就是我个人对 `javascript` 运算符优先级的一些理解，如有不足，还望评论指出
-
-
 
 ##  4. <a name='part2_01'></a> part2_01 基本数据类型和引用数据类型的区别
 
@@ -657,7 +739,7 @@ console.log(fo, bar); //fo = 2 ,b = 10
 从上面我们可以得知，当我改变fo中的数据时，bar中数据没有发生变化。
 
 ###  4.3. <a name='-1'></a>3、引用数据类型
-** 引用数据类型：Object **
+** 引用数据类型：`Object` **
 
 ```js
 var fo = {
@@ -671,7 +753,7 @@ console.log(fo.a, bar.a); //fo = 2 ,b = 2
 
 ![栈内存](images/part2_01/neicun2.png)
 
-从上面我们可以得知，当我改变fo中的数据时，bar中数据也发生了变化。当使用fo这个变量时，js解释器会通过bar存放的内存地址，找到内存中的相应地址，将其中的值取出来返回.
+从上面我们可以得知，当我改变 `fo` 中的数据时，`bar` 中数据也发生了变化。当使用 `fo` 这个变量时， `js` 解释器会通过 `bar` 存放的内存地址，找到内存中的相应地址，将其中的值取出来返回.
 
 
 ##  5. <a name='part2_02NaN'></a>part2_02 运算符，+NaN
@@ -680,16 +762,14 @@ console.log(fo.a, bar.a); //fo = 2 ,b = 2
 
 **任何值和字符串进行加法运算, 都会先转换为字符串之后再运算**
 
-* `+` 号两侧都是数字类型   作用 ：求两个数字的和。
+ `+` 号两侧都是数字类型   作用 ：求两个数字的和。
 
-例：
 ```javascript
 	var a = 11 + 5;
-	console.log(a);          // 16
+	console.log(a);        // 16
 ```
-* `+` 号有一侧是字符串类型或者是引用值时 其作用都是字符串拼接。
+ `+` 号有一侧是字符串类型或者是引用值时 其作用都是字符串拼接。
 
-例：
 ```javascript
 	var b = 'sed' + 'abc';
 	var c = 'dfsf' + 12;
@@ -699,92 +779,75 @@ console.log(fo.a, bar.a); //fo = 2 ,b = 2
 
 ###  5.2. <a name='-'></a>二、 `-` 号
 
-* `-` 号两侧都是数字类型 作用 ：求两个数字的差
+ `-` 号两侧都是数字类型 作用 ：求两个数字的差
 
-* 都是转换成数字类型在进行求两个数字的差
+ 都是转换成数字类型在进行求两个数字的差
 
-例：
 ```javascript
 	var d = 20 - 8;
-	console.log(d);          // 12
+	console.log(d);         // 12
 ```
 ###  5.3. <a name='-1'></a>三、 `*` 号
 
-* `*` 号两侧都是数字类型 作用 ：求两个数字的积
+ `*` 号两侧都是数字类型 作用 ：求两个数字的积
 
-* 都是转换成数字类型在进行求两个数字的积
+ 都是转换成数字类型在进行求两个数字的积
 
-例：
 ```javascript
 	var e = 3 * 5;
-	console.log(e);           // 15
+	console.log(e);         // 15
 ```
 ###  5.4. <a name='-1'></a>四、 `/` 号
 
-* `/` 号两侧都是数字类型 作用 ：求两个数字的商
+ `/` 号两侧都是数字类型 作用 ：求两个数字的商
 
-* 都是转换成数字类型在进行求两个数字的积
+ 都是转换成数字类型在进行求两个数字的积
 
-例：
 ```javascript
 	var f = 10 / 2;
-	console.log(f);           // 5
+	console.log(f);        // 5
 ```
 ###  5.5. <a name='-1'></a>五、 逗号运算符 , 结果取逗号后面的
 
-例1：
 ```javascript
 	var g = (1,2);
-	console.log(g);          // 2
+	console.log(g);       // 2
 ```
-例2：
 ```javascript
 	var h = (false,true);
 	var i = (true,false);
 	console.log(h);       // true
-	console.log(i);      // false
+	console.log(i);       // false
 ```
 ###  5.6. <a name='-Number'></a>六、 除了 `+` 运算符，其余的运算符`（- * / %）`运算时，如果符号两端是字符串，会先将字符串转为 `Number` 类型，再做数学运算
 
 ###  5.7. <a name='NaNNaN'></a>七、 `NaN` 跟任意数据类型运算 结果都是 `NaN`
 
-* 如果一个字符串中含有除数字外的英文字母，做运算转化为 `Number` 类型时，字母无法转为数字，最终会得到 `NaN`
+ 如果一个字符串中含有除数字外的英文字母，做运算转化为 `Number` 类型时，字母无法转为数字，最终会得到 `NaN`
 
 
-* NaN和 `+` 做运算，是字符串的拼接, `NaN` 和其余的算术运算符`（- * / %）`做运算，得到的都是 `NaN`
+ NaN和 `+` 做运算，是字符串的拼接, `NaN` 和其余的算术运算符`（- * / %）`做运算，得到的都是 `NaN`
 
-例1：
 ```javascript
 	var j = 'sdfg' * 3;
-	console.log(j);         // NaN
-```
-例2：
-```javascript
+	console.log(j);        // NaN
+
 	var str;
 	var k = str + 3;
-	console.log(k);         // NaN
-```
-例3：
-```javascript
+	console.log(k);        // NaN
+
 	var m = 100 / NaN;
-	console.log(m);         // NaN
-```
-例4：
-```javascript
-	NaN+"11"     // "NaN11"
+	console.log(m);        // NaN
+
+	NaN+"11"    // "NaN11"
 	NaN-11      // NaN
-```
-* `NaN` 和任何数据做关系运算，得到的都是 `false`
 
-例：
-```javascript
-	NaN > 0     // false
+	NaN > 0     // false  `NaN` 和任何数据做关系运算，得到的都是 `false`
 ```
-
 
 ##  6. <a name='part2_03'></a>part2_03 数据类型转换
 
-**Js中的数据类型一共有六种，即number、string、boolean、undefined、null、object。**
+**Js中的数据类型一共有六种，即number、string、boolean、undefined、null、object**
 
 
 ###  6.1. <a name='number'></a>一、number
@@ -800,9 +863,9 @@ Number 数字类型，可以为整数，也可以是浮点数。
 
 布尔类型        (`true`  `false`) 用来表示判断的结果
 
-* 非零的数都表示 `true` , `0` 表示 `false`。
+非零的数都表示 `true` , `0` 表示 `false`。
 
-* 非 "" 空字符串表示 `true` , "" 空字符串表示 `false` 。
+非 "" 空字符串表示 `true` , "" 空字符串表示 `false` 。
 
 ###  6.4. <a name='undefined'></a>四、undefined
 
@@ -816,7 +879,7 @@ Number 数字类型，可以为整数，也可以是浮点数。
 
 对象类型
 
-* 常见的对象有 `array` 、`window` 、`document` 等。
+常见的对象有 `array` 、`window` 、`document` 等。
 
 ###  6.7. <a name='-1'></a>七、数据类型的转换
 
@@ -824,11 +887,9 @@ Number 数字类型，可以为整数，也可以是浮点数。
 
 **数据的转换中，我们经常用到的是将变量转换成字符串或数字。**
 
-* 转换成字符串要使用 `toString（）`。
+转换成字符串要使用 `toString（）`。
 
-* 转换成数字时，有两种方法，parseInt() 转换成整数，parseFloat() 转换成浮点数。
-
-		例：
+转换成数字时，有两种方法，parseInt() 转换成整数，parseFloat() 转换成浮点数。
 ```javascript
 			var test = parseInt(“blue”); 			// NaN
  
@@ -840,11 +901,11 @@ Number 数字类型，可以为整数，也可以是浮点数。
  
 			var test = parseFloat(“22.5”); // 22.5
 ```
-* `NaN`  跟任意数据类型运算都是   `NaN` 。
+`NaN`  跟任意数据类型运算都是   `NaN` 。
 
-* `undefined` 、`null` 、`NaN` 转为数字都是 `0` 。
+`undefined` 、`null` 、`NaN` 转为数字都是 `0` 。
 
-* `undefined` 、`null` 、`NaN` 转为布尔值都是 `false` 。
+`undefined` 、`null` 、`NaN` 转为布尔值都是 `false` 。
 
 ###  6.8. <a name='-1'></a>划重点：
 ```javascript
@@ -873,7 +934,6 @@ Number 数字类型，可以为整数，也可以是浮点数。
  !''   //true
 ```
 
-**例：**
 ```javascript
 	1. var a;    //undefined  未定义
 
@@ -886,7 +946,6 @@ Number 数字类型，可以为整数，也可以是浮点数。
 	  }
 	  //注意：加的话只要有一边是字符串， 要把旁边的转换为字符串， 减乘除的一边不是数字也转为字符串。
 ```
-
 
 ##  7. <a name='part3_01'></a>part3_01 变量声明前置
 
@@ -1176,29 +1235,47 @@ console.log(a);  // 3
 ###  9.2. <a name='-1'></a>函数声明如下代码所示：
 
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc034eeb259dea?w=1044&h=131&f=png&s=4106)
+```javascript
+ function sum(x,y){
+     alert(x+y);
+ }
+ sum(1,2); //3
+```
 
 关于函数声明，它最重要的一个特征就是函数声明提升，意思是执行代码之前先读取函数声明。这意味着可以把函数声明放在调用它的语句之后。如下代码可以正确执行：
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc03887646bcb3?w=1043&h=130&f=png&s=4042)
-
+```javascript
+ sum(1,2); //3
+ function sum(x,y){
+     alert(x+y);
+ }
+```
 
 ###  9.3. <a name='-1'></a>函数表达式：
 
 函数表达式有好几种不同的语法。最常见和最具代表性的一种如下代码所示：
 
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc03c049ac2a7d?w=1043&h=130&f=png&s=3880)
+```javascript
+ var ss = function(x,y){
+     alert(x,y);
+ };
+ ss(1,2);
+```
 
 这种形式看起来像是常规的变量赋值语句。但函数表达式和函数声明的区别是函数表达式在使用前必须先赋值。所以接下来看到的代码执行时会出错：
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc040dc3409963?w=1182&h=130&f=png&s=6266)
+```javascript
+ ss(1,2); //报错,显示undefined is not a function
+ var ss = function(x,y){
+     alert(x+y);
+ };
+```
 
 造成这种现象是因为解析器向执行环境加载数据时，解析器会优先读取函数声明，使其在执行代码前可用。而函数表达式，则必须等到解析器执行到它所在的代码区域，才会进行解析。
-
-
-
-##  10. <a name='part4_02'></a>part4_02 自执行函数
+ 
+ 
+##  10. <a name='part4_02'></a>part4_02 自执行函数数
 
 
   我们创建了一个匿名的函数 ，并立即执行它 ，由于外部无法引用它内部的变量 ，因此在执行完后很快就会被释放 ，关键是这种机制不会污染全局对象。
@@ -1212,10 +1289,10 @@ console.log(a);  // 3
 1. 声明一个匿名函数
 2. 马上调用这个匿名函数
 
-
-**如下实例 ：**
-
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc14d5472b0328?w=392&h=32&f=png&s=2364)
+如下实例 ：
+```javascript
+(function(){alert('我是匿名函数')}) ()
+```
 
 首先声明一个匿名函数 `function (){ alert ('我是匿名函数')}` 。
 
@@ -1228,10 +1305,16 @@ console.log(a);  // 3
  2. 这个作用域里面的变量 , 外面访问不到（即避免「变量污染」）。
   
 如下图 :
+```javascript
+ var LiList = ul.getElementsBYTagName('li')
+ for(var i = 0; i<6; i++){
+     liList [i] .onclick = funcion(){
+         alert(i) //为什么 alert 出来的总是 6, 而不是0、1、2、3、4、5
+     }
+ }
+```
 
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc15804f113c17?w=650&h=194&f=png&s=7518)
-  
 
 为什么 `alert` 的总是 `6` 呢，因为 `i` 是贯穿整个作用域的，而不是给每个 `li` 分配了一个 `i` 。
 
@@ -1239,16 +1322,22 @@ console.log(a);  // 3
 
 如下图所示 ：
 
-
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc15ae8014df8d?w=518&h=251&f=png&s=6873)
+```javascript
+ var LiList = ul.getElementsBYTagName('li')
+ for(var i = 0; i<6; i++){
+     !function (ii){
+         LiList[ii].onclick = function() {
+             alert(ii) //0、1、2、3、4、5
+         }
+     }(i)
+  }
+```
 
 在立即执行函数执行的时候 ，`i` 的值被赋值给 `ii` ，此后 `ii` 的值一直不变 。
 
 `i` 的值从 `0` 变化到 `5` ，对应 `6` 个立即执行函数 ，这 `6` 个立即执行函数里面的  `ii`  分别是      `0、1、2、3、4、5` 。
 
 以上，就是立即执行函数的基本概念 。
-
-
 
 ##  11. <a name='part4_03'></a>part4_03 提取查询参数
 
@@ -1262,7 +1351,7 @@ console.log(a);  // 3
 
 http://www.xxxx.com/aaa.html#abc?a=1&b=2&c=&d=xxx
 
-```
+```javascript
 function getParameter(url) {
 	var index = url.indexOf('?')	//查询参数 未找到返回-1
 	var paraObj = {};
@@ -1295,7 +1384,7 @@ alert(getParameter(url));
 
 **正则法**
 
-```
+```javascript
 function getParameter(name){
 	var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
 
@@ -1317,7 +1406,7 @@ alert(getParameter("参数名"));
 
 1、 `window.location.href` ( 设置或获取整个 URL 为字符串 )
 
-```
+```javascript
 var getParameter = window.location.href;
 console.log(getParameter);
 
@@ -1327,7 +1416,7 @@ console.log(getParameter);
 
 2、 `window.location.protocol` ( 设置或获取 URL 的协议部分 )
 
-```
+```javascript
 var getParameter = window.location.protocol;
 console.log(getParameter);
 
@@ -1336,7 +1425,7 @@ console.log(getParameter);
 
 3、 `window.location.host` ( 设置或获取 URL 的主机部分 )
 
-```
+```javascript
 var getParameter = window.location.host;
 console.log(getParameter);
 
@@ -1346,7 +1435,7 @@ console.log(getParameter);
 
 4、 `window.location.port` ( 设置或获取与 URL 关联的端口号码 )
 
-```
+```javascript
 var getParameter = window.location.port;
 console.log(getParameter);
 
@@ -1357,7 +1446,7 @@ console.log(getParameter);
 
 5、 `window.location.pathname` ( 设置或获取与 URL 的路径部分（就是文件地址） )
 
-```
+```javascript
 var getParameter = window.location.pathname;
 console.log(getParameter);
 
@@ -1367,7 +1456,7 @@ console.log(getParameter);
 
 6、 `window.location.search` ( 设置或获取 href 属性中跟在问号后面的部分 )
 
-```
+```javascript
 var getParameter = window.location.search;
 console.log(getParameter);
 
@@ -1377,7 +1466,7 @@ console.log(getParameter);
 
 7、 `window.location.hash` ( 设置或获取 href 属性中在井号“#”后面的分段 )
 
-```
+```javascript
 var getParameter = window.location.hash;
 console.log(getParameter);
 
@@ -1424,7 +1513,7 @@ arr [10] 下标为 10 的元素是 c
 那么问题 2 就能解决了，arr[5] 是空的 访问一个不存在的元素，那输出结果肯定是 **undefined**
 
 
-###2.
+###  12.2. <a name='-1'></a>2.
 
 ```javascript
 console.log(a);
@@ -1487,7 +1576,7 @@ console.log(a);
 
 
 
-###3.
+###  12.3. <a name='-1'></a>3.
 
 ```javascript
 
@@ -1547,12 +1636,11 @@ test();
 所以输出的结果依次是：
 
 
-**function(){}**
+`function(){}`
 
-**undefined**
+`undefined`
 
-**Hello**
-
+`Hello`
 
 ##  13. <a name='part5_02'></a>part5_02 字符串出现最多的字符
 
@@ -1563,53 +1651,37 @@ test();
 ```javascript
 
 function getManyChar(star) {
-
-	var obj = {}; //遍历出的字符 存到一个空的变量里
-
-	for ( var i = 0, l = star.length; i < l; i++ ){  //遍历出字符串中的所有字符
-
-	var perChar = star.charAt(i); //返回在指定位置的字符
-
-	if (obj[perChar] == undefined) { //判断对象中有没有当前字符
-		obj[perChar] = 1; //没有时 赋1
-	} else {
-		obj[perChar] = obj[perChar] + 1; //有  次数+1
+		var obj = {}; //遍历出的字符 存到一个空的变量里
+		for ( var i = 0, l = star.length; i < l; i++ ){  //遍历出字符串中的所有字符
+		var perChar = star.charAt(i); //返回在指定位置的字符
+		if (obj[perChar] == undefined) { //判断对象中有没有当前字符
+			obj[perChar] = 1; //没有时 赋1
+		} else {
+			obj[perChar] = obj[perChar] + 1; //有  次数+1
+			}
 		}
-	}
-
-	var maxKey = '' , max = 0 ;
-
-	var maxkey1 = '';
-
-	// maxKey 存出现最多的那个字符 空
-	// max 存次数最多的值
-	// maxKey2 存相同次数的数
+		var maxKey = '' , max = 0 ;
+		var maxkey1 = '';
+		// maxKey 存出现最多的那个字符 空
+		// max 存次数最多的值
+		// maxKey2 存相同次数的数
 	for (var attr in obj){
-
 		if(obj[attr] > max){ //如果次数大于 max
 			max = obj[attr]; //将次数这个数 赋给 max
 			maxKey = attr; //存最多的那个字符 就等于这个字符
 		}
 		else if(obj[attr] == max){ //判断如果出现相同的数时
-
 			max = obj [attr]; //相同数 最大值 还是 max
-
 			maxKey1 = attr； //另一个次数相同的字符 存到 maxKey1 中 
-		
 		}
-
 	}
-
 	return {
 		key :  maxKey + ',' + maxKey1,
 		nums : max
 	}
-
 }
-
 var star = 'aaaaaaaasddddddddfssssaaaaassdsdsfsdgdsasdssssssddddaaaa';
-
 var res = getManyChar(star);
-
 console.log(res);
+
 ```

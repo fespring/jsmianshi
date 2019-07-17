@@ -46,26 +46,26 @@ console.log(typeof new RegExp());         //object   无效
 
 通过以上输出结果，可以看到 ：
 
-对于基本类型，除 null 以外，均可以返回正确的结果。
+对于基本类型，除 `null` 以外，均可以返回正确的结果。
 
-对于引用类型，除 function 以外，一律返回 object 类型。
+对于引用类型，除 `function` 以外，一律返回 `object` 类型。
 
-对于 null ，返回 object 类型。
+对于 `null` ，返回 `object` 类型。
 
-对于 function 返回  function 类型。
+对于 `function` 返回  `function` 类型。
 
 #### 局限性：
 
-1、因为 null 值表示一个空对象指针，所以这也正是使用 typeof 操作符检测 null 值时会返回 "object" 的原因，其实 null 的数据类型是 Null ; 
+1、因为 `null` 值表示一个空对象指针，所以这也正是使用 `typeof` 操作符检测 `null` 值时会返回 `object` 的原因，其实 `null` 的数据类型是 `Null` ; 
 
-1、引用类型中的 数组、日期、正则 也都有属于自己的具体类型 ; 而 typeof 对于这些类型的处理，只返回了处于其原型链最顶端的 Object 类型。
+1、引用类型中的 数组、日期、正则 也都有属于自己的具体类型 ; 而 `typeof` 对于这些类型的处理，只返回了处于其原型链最顶端的 `Object` 类型。
 
 
 
 #### 二、instanceof   检测某一个实例是否属于某个类
 
 
-主要用来弥补 typeof 不能检测具体属于哪个对象的局限性。
+主要用来弥补 `typeof` 不能检测具体属于哪个对象的局限性。
 
 
 ```console.log("1" instanceof String);   //false
@@ -89,11 +89,11 @@ console.log({} instanceof Object);  //true
 
 1、不能用于检测和处理字面量方式创建出来的基本数据类型值，即基本数据类型。
 
-2、instanceof的特性：只要在当前实例的原型链上的对象，我们用其检测出来都为true。
+2、`instanceof` 的特性：只要在当前实例的原型链上的对象，我们用其检测出来都为 `true`。
 
 #### 三、Object.prototype.toString.call()　原型链上的Object对象的toString方法
 
-返回值的类型为string类型，是最全面也是最常用的检测数据类型的方式。
+返回值的类型为 `string` 类型，是最全面也是最常用的检测数据类型的方式。
 
 
 ```Object.prototype.toString.call('') ;   // [object String]
@@ -118,10 +118,3 @@ Object.prototype.toString.call(new RegExp()) ; // [object RegExp]
 
 Object.prototype.toString.call(new Error()) ; // [object Error]
 ```
-
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 ## part2_03 数据类型转换
 
-**Js中的数据类型一共有六种，即number、string、boolean、undefined、null、object。**
+**Js中的数据类型一共有六种，即number、string、boolean、undefined、null、object**
 
 
 ### 一、number
@@ -16,9 +16,9 @@ Number 数字类型，可以为整数，也可以是浮点数。
 
 布尔类型        (`true`  `false`) 用来表示判断的结果
 
-* 非零的数都表示 `true` , `0` 表示 `false`。
+非零的数都表示 `true` , `0` 表示 `false`。
 
-* 非 "" 空字符串表示 `true` , "" 空字符串表示 `false` 。
+非 "" 空字符串表示 `true` , "" 空字符串表示 `false` 。
 
 ### 四、undefined
 
@@ -32,7 +32,7 @@ Number 数字类型，可以为整数，也可以是浮点数。
 
 对象类型
 
-* 常见的对象有 `array` 、`window` 、`document` 等。
+常见的对象有 `array` 、`window` 、`document` 等。
 
 ### 七、数据类型的转换
 
@@ -40,11 +40,9 @@ Number 数字类型，可以为整数，也可以是浮点数。
 
 **数据的转换中，我们经常用到的是将变量转换成字符串或数字。**
 
-* 转换成字符串要使用 `toString（）`。
+转换成字符串要使用 `toString（）`。
 
-* 转换成数字时，有两种方法，parseInt() 转换成整数，parseFloat() 转换成浮点数。
-
-		例：
+转换成数字时，有两种方法，parseInt() 转换成整数，parseFloat() 转换成浮点数。
 ```javascript
 			var test = parseInt(“blue”); 			// NaN
  
@@ -56,11 +54,11 @@ Number 数字类型，可以为整数，也可以是浮点数。
  
 			var test = parseFloat(“22.5”); // 22.5
 ```
-* `NaN`  跟任意数据类型运算都是   `NaN` 。
+`NaN`  跟任意数据类型运算都是   `NaN` 。
 
-* `undefined` 、`null` 、`NaN` 转为数字都是 `0` 。
+`undefined` 、`null` 、`NaN` 转为数字都是 `0` 。
 
-* `undefined` 、`null` 、`NaN` 转为布尔值都是 `false` 。
+`undefined` 、`null` 、`NaN` 转为布尔值都是 `false` 。
 
 ### 划重点：
 ```javascript
@@ -89,7 +87,6 @@ Number 数字类型，可以为整数，也可以是浮点数。
  !''   //true
 ```
 
-**例：**
 ```javascript
 	1. var a;    //undefined  未定义
 
@@ -102,14 +99,3 @@ Number 数字类型，可以为整数，也可以是浮点数。
 	  }
 	  //注意：加的话只要有一边是字符串， 要把旁边的转换为字符串， 减乘除的一边不是数字也转为字符串。
 ```
-
-
-
-
-
-
-
-
-
-
-
