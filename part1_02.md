@@ -1,6 +1,6 @@
 ## part1_02 检测数据类型的方法
 
-### 面试题中经常会考 js 数据类型检测，分享一下 js 中常用的几种方法来判断数据类型
+##### 面试题中经常会考 js 数据类型检测，分享一下 js 中常用的几种方法来判断数据类型
 
 ### 数据类型分为以下两种 ：
 
@@ -18,7 +18,7 @@
 
 ### 怎么检测数据类型呢 ？
 
-## 一、typeof   检测数据类型的运算符
+###### 一、typeof   检测数据类型的运算符
 
 ```console.log(typeof '');      //string
 
@@ -54,7 +54,7 @@ console.log(typeof new RegExp());         //object   无效
 
 对于 function 返回  function 类型。
 
-## 局限性：
+##### 局限性：
 
 1、因为 null 值表示一个空对象指针，所以这也正是使用 typeof 操作符检测 null 值时会返回 "object" 的原因，其实 null 的数据类型是 Null ; 
 
@@ -62,7 +62,7 @@ console.log(typeof new RegExp());         //object   无效
 
 
 
-## 二、instanceof   检测某一个实例是否属于某个类
+##### 二、instanceof   检测某一个实例是否属于某个类
 
 
 主要用来弥补 typeof 不能检测具体属于哪个对象的局限性。
@@ -85,13 +85,13 @@ console.log(function(){} instanceof Function);  //true
 console.log({} instanceof Object);  //true
 ```
 
-## 局限性：
+##### 局限性：
 
 1、不能用于检测和处理字面量方式创建出来的基本数据类型值，即基本数据类型。
 
 2、instanceof的特性：只要在当前实例的原型链上的对象，我们用其检测出来都为true。
 
-## 三、Object.prototype.toString.call()　原型链上的Object对象的toString方法
+##### 三、Object.prototype.toString.call()　原型链上的Object对象的toString方法
 
 返回值的类型为string类型，是最全面也是最常用的检测数据类型的方式。
 
