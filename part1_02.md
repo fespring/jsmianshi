@@ -6,13 +6,11 @@
 
 1、基本数据类型
 
-```String、 Number、 Boolean、 Symbol、 Undefined、 Null 
-```
+`String、 Number、 Boolean、 Symbol、 Undefined、 Null`
 
 2、引用数据类型
 
-```Object、 Function、 Array、 Date...
-```
+`Object、 Function、 Array、 Date...`
 
 基本类型也称为简单类型，指的是不同变量会分配不同的存储空间，为了便于提升变量查询速度，将其存储在栈中。
 
